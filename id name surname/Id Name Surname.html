@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Name Username</title>
+</head>
+
+<body>
+    <input type="text" id="Id">
+    <input type="text" id="Name">
+    <input type="text" id="Surname">
+    <button id="btn"> Add list item </button>
+    <br>
+    <h2>Id Name Surname</h2>
+    <table id="table"></table>
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            var tr = document.createElement("tr")
+            tr.innerHTML = `<th>${Id.value}</th>
+                            <th>${Name.value}</th>
+                            <th>${Surname.value}</th>`
+            table.appendChild(tr);
+        })
+
+    </script>
+    
+</body>
+
+</html>
